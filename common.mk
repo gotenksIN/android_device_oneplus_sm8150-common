@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     AOSPAOnePlusSM8150Settings \
     AOSPAOnePlusSM8150SystemUI \
     OnePlusSM8150Frameworks \
+    OnePlusSM8150Settings \
     OnePlusSM8150SystemUI
 
 # A/B
