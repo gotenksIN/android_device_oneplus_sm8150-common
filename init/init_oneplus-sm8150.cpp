@@ -103,10 +103,6 @@ void vendor_load_properties() {
           /* Global / US Unlocked */
           property_override("ro.product.model", "GM1905");
           break;
-        default:
-          /* Generic */
-          property_override("ro.product.model", "GM1905");
-          break;
       }
       break;
     case 18821:
@@ -127,10 +123,6 @@ void vendor_load_properties() {
           break;
         case 5:
           /* Global / US Unlocked */
-          property_override("ro.product.model", "GM1917");
-          break;
-        default:
-          /* Generic */
           property_override("ro.product.model", "GM1917");
           break;
       }
@@ -160,15 +152,11 @@ void vendor_load_properties() {
           /* Global / US Unlocked */
           property_override("ro.product.model", "HD1905");
           break;
-        default:
-          /* Generic */
-          property_override("ro.product.model", "HD1905");
-          break;
       }
       break;
     case 19863:
       /* OnePlus 7T T-Mobile */
-      property_override("vendor.product.device", "hotdogb");
+      property_override("vendor.product.device", "hotdogt");
       property_override("ro.product.model", "HD1907");
       break;
     case 19801:
@@ -191,11 +179,12 @@ void vendor_load_properties() {
           /* Global / US Unlocked */
           property_override("ro.product.model", "HD1917");
           break;
-        default:
-          /* Generic */
-          property_override("ro.product.model", "HD1917");
-          break;
       }
+      break;
+    case 19861:
+      /* OnePlus 7T Pro NR */
+      property_override("vendor.product.device", "hotdogg");
+      property_override("ro.product.model", "HD1925");
       break;
     }
 
