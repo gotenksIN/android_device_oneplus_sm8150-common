@@ -1,0 +1,117 @@
+// Common init scripts
+
+prebuilt_etc {
+    name: "init.oem_ftm.rc",
+    src: "etc/init.oem_ftm.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.rc",
+    src: "etc/init.oneplus.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.camera.rc",
+    src: "etc/init.oneplus.camera.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.display.rc",
+    src: "etc/init.oneplus.display.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.fingerprint.rc",
+    src: "etc/init.oneplus.fingerprint.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.nfc.rc",
+    src: "etc/init.oneplus.nfc.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.usb.rc",
+    src: "etc/init.oneplus.usb.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oneplus.vibrator.rc",
+    src: "etc/init.oneplus.vibrator.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.oneplus.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.oneplus.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "vendor.oem_ftm.rc",
+    src: "etc/vendor.oem_ftm.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "vendor.oem_ftm_svc_disable.rc",
+    src: "etc/vendor.oem_ftm_svc_disable.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+// Common config scripts
+
+sh_binary {
+    name: "ftm_power_config.sh",
+    src: "etc/ftm_power_config.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sensors.sh",
+    src: "bin/init.qcom.sensors.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.chg_policy.sh",
+    src: "bin/init.qti.chg_policy.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "bin/init.qti.dcvs.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.qcv.sh",
+    src: "bin/init.qti.qcv.sh",
+    vendor: true,
+}

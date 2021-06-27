@@ -35,13 +35,6 @@ vendor.oem.nfc.              u:object_r:vendor_nfc_prop:s0
 persist.factoryota.reboot    u:object_r:vendor_nfc_prop:s0
 persist.vendor.nfc.delayese  u:object_r:vendor_nfc_prop:s0
 
-# Param
-ro.boot.prmec    u:object_r:exported_default_prop:s0
-ro.boot.prmfc    u:object_r:vendor_param_prop:s0
-ro.boot.prmuc    u:object_r:vendor_param_prop:s0
-ro.boot.stg      u:object_r:vendor_param_prop:s0
-ro.boot.msz      u:object_r:vendor_param_prop:s0
-
 # RF version
 ro.boot.rf_version    u:object_r:exported_default_prop:s0
 

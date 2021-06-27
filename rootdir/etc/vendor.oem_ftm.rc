@@ -1,6 +1,5 @@
 on post-fs-data
     chmod 0666 /dev/block/sda6
-    chmod 0666 /dev/param
 
 service wcnss-service-f /system/bin/wcnss_service -f
     class main

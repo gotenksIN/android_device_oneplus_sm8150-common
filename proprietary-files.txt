@@ -744,13 +744,6 @@ vendor/lib64/libqsocket.so|70fc03025413339d6e2044aa865c446848d360e4
 vendor/lib64/libsmemlog.so|cb718f8d51cc594fe893cb44d9ead0d79cf8395a
 vendor/lib64/libsystem_health_mon.so|b0b55b0970cc7de3885a492e014f89196db5e2c9
 
-# Param
-vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service
-vendor/etc/init/vendor.oneplus.hardware.param@1.0-service.rc
-vendor/lib/vendor.oneplus.hardware.param@1.0.so
-vendor/lib64/vendor.oneplus.hardware.param@1.0.so
-vendor/lib64/libparam_vendor.so
-
 # QCRIL - from LA.UM.9.1.r1-09600-SMxxx0.0
 vendor/bin/hw/qcrild|bc7d1967eaaac31159e39b5d5c5a938d010807d2
 vendor/bin/qtigetprop|4d0e9e9adb56cdbe4562c2fa54416aa5eb2968e8
