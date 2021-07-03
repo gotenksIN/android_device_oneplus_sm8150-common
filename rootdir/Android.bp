@@ -1,13 +1,6 @@
 // Common init scripts
 
 prebuilt_etc {
-    name: "init.oem_ftm.rc",
-    src: "etc/init.oem_ftm.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.oneplus.rc",
     src: "etc/init.oneplus.rc",
     sub_dir: "init",
@@ -70,27 +63,7 @@ prebuilt_etc {
     vendor: true,
 }
 
-prebuilt_etc {
-    name: "vendor.oem_ftm.rc",
-    src: "etc/vendor.oem_ftm.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "vendor.oem_ftm_svc_disable.rc",
-    src: "etc/vendor.oem_ftm_svc_disable.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 // Common config scripts
-
-sh_binary {
-    name: "ftm_power_config.sh",
-    src: "etc/ftm_power_config.sh",
-    vendor: true,
-}
 
 sh_binary {
     name: "init.qcom.sensors.sh",

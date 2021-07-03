@@ -153,7 +153,6 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    ftm_power_config.sh \
     init.oneplus.rc \
     init.oneplus.camera.rc \
     init.oneplus.display.rc \
@@ -161,15 +160,12 @@ PRODUCT_PACKAGES += \
     init.oneplus.nfc.rc \
     init.oneplus.usb.rc \
     init.oneplus.vibrator.rc \
-    init.oem_ftm.rc \
     init.qcom.sensors.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.qcv.sh \
     init.target.rc \
-    ueventd.oneplus.rc \
-    vendor.oem_ftm.rc \
-    vendor.oem_ftm_svc_disable.rc
+    ueventd.oneplus.rc
 
 # Display
 PRODUCT_PACKAGES += \

@@ -10,6 +10,10 @@ on fs
     write /sys/devices/platform/soc/984000.i2c/i2c-4/4-0048/tp_fw_update 0
     write /sys/devices/platform/soc/a94000.i2c/i2c-4/4-005d/tp_fw_update 0
     write /sys/devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/tp_fw_update 0
+    write /sys/devices/platform/soc/c80000.i2c/i2c-5/5-0048/tp_fw_update 0
+    write /sys/devices/platform/soc/c80000.i2c/i2c-5/5-0049/tp_fw_update 0
+    write /sys/devices/platform/soc/c80000.i2c/i2c-4/4-0020/tp_fw_update 0
+    write /sys/devices/platform/soc/c80000.i2c/i2c-5/5-0020/tp_fw_update 0
 
     # Thermal
     chown system system /dev/msm_thermal
@@ -24,6 +28,17 @@ on fs
     chmod 0664 /dev/mmw0_thermal
     chmod 0664 /dev/mmw1_thermal
     chmod 0664 /dev/mmw2_thermal
+
+    chmod 0666 /sys/class/backlight/panel0-backlight/brightness
+	chmod 0666 /sys/class/drm/card0-DSI-1/SRGB
+	chmod 0666 /sys/class/drm/card0-DSI-1/DCI_P3
+	chmod 0666 /sys/class/drm/card0-DSI-1/night_mode
+	chmod 0666 /sys/class/drm/card0-DSI-1/panel_serial_number
+	chmod 0666 /sys/class/drm/card0-DSI-1/oneplus_mode
+	chmod 0666 /sys/class/drm/card0-DSI-1/adaption_mode
+	chmod 0666 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
+	chown radio radio /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
+	chown radio radio /proc/force_reset
 
 on boot
     # Infrared proximity sensor
@@ -70,6 +85,14 @@ on post-fs-data
     # Create directory for ultrasound_monitor
     mkdir /data/vendor/audio/ultrasound 0770 media audio
 
-on property:ro.boot.product.hardware.sku=9
-    setprop persist.radio.multisim.config ssss
-    setprop persist.vendor.radio.uicc_se_enabled true
+on property:ro.boot.project_name=18821
+    setprop persist.radio.multisim.config dsds
+
+on property:ro.boot.project_name=18857
+    setprop persist.radio.multisim.config dsds
+
+on property:ro.boot.project_name=18865
+    setprop persist.radio.multisim.config dsds
+
+on property:ro.boot.project_name=19801
+    setprop persist.radio.multisim.config dsds
